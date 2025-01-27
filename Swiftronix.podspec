@@ -15,8 +15,6 @@ Pod::Spec.new do |s|
   s.source_files     = 'Swiftronix/Main.swift'
 
   # Add dependencies here
-  s.dependency 'Alamofire', '~> 5.6'
-  s.dependency 'SwiftyJSON', '~> 5.0'
 
 
   # Specify Swift version

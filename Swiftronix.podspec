@@ -8,15 +8,15 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/abhiganesh1610/Swiftronix'
   s.license          = { :type => 'MIT', :text => 'https://opensource.org/licenses/MIT' }
   s.author           = { 'Ganesh' => 'abhiganesh16101999@gmail.com' }
-  s.source           = { :git => 'https://github.com/abhiganesh1610/Swiftronix.git', :tag => s.version }
+  s.source           = { :git => 'https://github.com/abhiganesh1610/Swiftronix.git', :tag => '1.0.0' }
   s.ios.deployment_target = '11.0'
 
   # Specify the source files
   s.source_files     = 'Swiftronix/Main.swift'
 
-  # Dependencies (the libraries your pod depends on)
-  s.dependency 'Alamofire'
-  s.dependency 'SwiftyJSON'
+  # Add dependencies here
+  s.dependency 'Alamofire', '~> 5.6'
+  s.dependency 'SwiftyJSON', '~> 5.0'
 
 
   # Specify Swift version

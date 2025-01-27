@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Swiftronix'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A combined library with Alamofire, SwiftyJSON'
   s.description      = 'This pod includes popular Swift libraries such as Alamofire, SwiftyJSON'
   s.homepage         = 'https://github.com/abhiganesh1610/Swiftronix'

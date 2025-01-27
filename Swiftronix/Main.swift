@@ -10,7 +10,7 @@ import Foundation
 
 
 // MARK: - API CALLING -
-enum NetworkError: Error {
+public enum NetworkError: Error {
     case badRequest
     case decodingError(Error)
     case invalidResponse
@@ -19,7 +19,7 @@ enum NetworkError: Error {
 
 extension NetworkError: LocalizedError {
     
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
             case .badRequest:
                 return NSLocalizedString("Bad Request (400): Unable to perform the request.", comment: "badRequestError")
@@ -33,7 +33,7 @@ extension NetworkError: LocalizedError {
     }
 }
 
-enum HTTPMethod {
+public enum HTTPMethod {
     case get([URLQueryItem])
     case post(Data?)
     case delete
@@ -53,14 +53,14 @@ enum HTTPMethod {
     }
 }
 
-struct Resource<T: Codable> {
+public struct Resource<T: Codable> {
     let url: URL
     var method: HTTPMethod = .get([])
     var headers: [String: String]? = nil
     var modelType: T.Type
 }
 
-struct HTTPClient {
+public struct HTTPClient {
     
     private let session: URLSession
     
@@ -124,7 +124,7 @@ struct HTTPClient {
 }
 
 
-struct ErrorResponse: Codable {
+public struct ErrorResponse: Codable {
     let message: String?
 }
 
